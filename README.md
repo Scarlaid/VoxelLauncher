@@ -1,149 +1,175 @@
-VoxelLauncher - Hướng Dẫn Sử Dụng & README
-VoxelLauncher là launcher Minecraft tùy chỉnh được xây dựng bằng WinUI 3 và Windows App SDK, sử dụng thư viện CmlLib.Core để hỗ trợ đầy đủ các tính năng Minecraft Java Edition. Launcher được phát triển bởi ShadowZa982 (GitHub: ShadowZa982/VoxelLauncher).
-Launcher tập trung vào giao diện đẹp, dễ sử dụng, hỗ trợ đăng nhập Microsoft/Offline, tải phiên bản Minecraft tự động, và cập nhật launcher qua GitHub Releases.
-Phiên bản hiện tại: v1.0.0 (cập nhật ngày 11/11/2025)
-Yêu cầu hệ thống: Windows 10 (version 1803 trở lên) hoặc Windows 11 (version 21H2 trở lên).
+# VoxelLauncher
 
-📋 Mô Tả Tổng Quan
-VoxelLauncher là launcher miễn phí, mã nguồn mở, giúp người dùng dễ dàng chơi Minecraft Java Edition mà không cần tải thủ công các file từ Mojang.
-Đặc điểm nổi bật:
+**VoxelLauncher** là **launcher Minecraft Java Edition** được xây dựng bằng **WinUI 3** và **Windows App SDK**, sử dụng thư viện **[CmlLib.Core](https://github.com/CmlLib/CmlLib.Core)** để hỗ trợ đầy đủ các tính năng Minecraft chính thức.
 
-Giao diện hiện đại: Sử dụng WinUI 3 với theme tối, animation mượt mà, sidebar dễ điều hướng.
-Hỗ trợ tài khoản: Đăng nhập Microsoft (Xbox Live) hoặc chơi Offline với tên tùy chỉnh. Lưu nhiều tài khoản, dễ chuyển đổi.
-Quản lý phiên bản: Tải tự động danh sách phiên bản từ Mojang, hỗ trợ tất cả phiên bản Java Edition (1.7.10 - 1.21+).
-Tích hợp Java: Tự động phát hiện và sử dụng Java cài sẵn, hỗ trợ tải Java nếu thiếu.
-Cập nhật tự động: Kiểm tra và tải cập nhật launcher từ GitHub, với progress bar chi tiết (tốc độ tải, dung lượng).
-Thông báo: Hiển thị toast notification khi đăng nhập thành công, và badge cho cập nhật bị bỏ qua.
-Tùy chỉnh: Sidebar với các tab (Changelog, Mods, Servers, Đối tác), hỗ trợ WebView2 để hiển thị nội dung web.
-Bảo mật: Sử dụng MSessionFileStorage để lưu tài khoản an toàn, hỗ trợ XboxAuthNet cho xác thực Microsoft.
+> **Phát triển bởi:** [ShadowZa982](https://github.com/ShadowZa982)  
+> **GitHub:** [ShadowZa982/VoxelLauncher](https://github.com/ShadowZa982/VoxelLauncher)
 
-Launcher không yêu cầu tài khoản Mojang Premium để chơi Offline, nhưng cần Premium để chơi online với server.
+---
 
-🎮 Chức Năng Chính
-1. Đăng Nhập & Quản Lý Tài Khoản
+## **Phiên bản hiện tại:** `v1.0.0`  
+**Cập nhật:** 11/11/2025  
+**Yêu cầu hệ thống:**  
+- **Windows 10** (version **1803 trở lên**)  
+- **Windows 11** (version **21H2 trở lên**)
 
-Microsoft Account: Hỗ trợ xác thực Xbox Live qua MSAL (Microsoft Authentication Library). Lưu session tự động, tự động đăng nhập khi mở launcher.
-Offline Mode: Chơi với tên tùy chỉnh, không cần internet.
-Quản lý: Lưu nhiều tài khoản, xem avatar Minecraft, thời gian đăng nhập cuối, loại tài khoản. Hỗ trợ xóa tài khoản.
-Thông báo: Toast notification khi đăng nhập thành công với avatar.
+---
 
-2. Tải & Chạy Minecraft
+## **Mô Tả Tổng Quan**
 
-Danh sách phiên bản: Tải metadata từ Mojang, hiển thị tất cả phiên bản (release, snapshot).
-Tải game: Sử dụng ParallelGameInstaller để tải song song assets, libraries, client JAR. Hỗ trợ Mojang servers.
-Java tích hợp: Phát hiện Java tự động, hỗ trợ Java 8+ (tối thiểu Java 17 cho phiên bản mới).
-Chạy game: Sử dụng MinecraftLauncherParameters, hỗ trợ tùy chỉnh RAM, JVM args.
+**VoxelLauncher** là **launcher miễn phí, mã nguồn mở**, giúp bạn chơi **Minecraft Java Edition** **một cách dễ dàng** mà **không cần tải thủ công** file từ Mojang.
 
-3. Cập Nhật Launcher
+### **Đặc điểm nổi bật**
 
-Kiểm tra tự động: Sử dụng appcast.xml từ GitHub Releases, so sánh version assembly.
-Dialog cập nhật: Hiển thị notes HTML qua WebView2, với nút "Cập nhật ngay" / "Để sau".
-Tải ZIP: Tải release ZIP với progress bar (dung lượng, tốc độ KB/s), kiểm tra tính toàn vẹn ZIP.
-Cài đặt: Chạy VoxelUpdater.exe để giải nén, kill launcher cũ, khởi động lại. Hỗ trợ pending updates (cập nhật bị bỏ qua).
+- **Giao diện hiện đại** – WinUI 3, theme tối, animation mượt mà, sidebar điều hướng nhanh  
+- **Hỗ trợ đa tài khoản** – Microsoft (Xbox Live) + Offline, lưu nhiều tài khoản, chuyển đổi nhanh  
+- **Tải phiên bản tự động** – Hỗ trợ **tất cả phiên bản** từ `1.7.10` → `1.21+` (bao gồm snapshot)  
+- **Tích hợp Java** – Tự động phát hiện, hỗ trợ **Java 8+**, tải **Java 17+** nếu thiếu  
+- **Cập nhật tự động** – Kiểm tra GitHub Releases, tải ZIP + progress bar chi tiết  
+- **Thông báo thông minh** – Toast khi đăng nhập, badge cho cập nhật bị bỏ qua  
+- **Tùy chỉnh mạnh mẽ** – Sidebar (Mods, Servers, Changelog), WebView2 hiển thị nội dung web  
+- **Bảo mật cao** – Lưu session an toàn, hỗ trợ **XboxAuthNet + MSAL**
 
-4. Giao Diện & Tùy Chỉnh
+> **Không cần tài khoản Premium để chơi Offline**  
+> **Cần Premium để chơi online với server chính thức**
 
-Sidebar: Menu trượt với các trang (Info, Mods, Servers, Partners).
-Bottom Bar: Nút Play lớn, Changelog, Settings.
-Custom Title Bar: Hỗ trợ drag, theme tối.
-Loading Screen: Video animation + progress bar cho khởi tạo.
-Notification: Badge cho pending updates, toast cho login.
+---
 
-5. Hỗ Trợ Mods & Servers
+## **Chức Năng Chính**
 
-Mods: Tab hỗ trợ tải mods qua CurseForge (sắp tới).
-Servers: Danh sách server tùy chỉnh, ping tự động.
-Changelog: Hiển thị notes cập nhật qua WebView2.
+### 1. **Đăng Nhập & Quản Lý Tài Khoản**
+- **Microsoft Account** – Xác thực Xbox Live qua **MSAL**, tự động đăng nhập  
+- **Offline Mode** – Chơi không cần internet, tên tùy chỉnh  
+- **Quản lý tài khoản** – Lưu nhiều tài khoản, xem avatar, thời gian đăng nhập, loại tài khoản  
+- **Xóa tài khoản** – Dễ dàng xóa vĩnh viễn  
+- **Thông báo** – Toast + avatar khi đăng nhập thành công
 
+### 2. **Tải & Chạy Minecraft**
+- **Danh sách phiên bản** – Tải từ Mojang, hiển thị **release + snapshot**  
+- **Tải song song** – Dùng `ParallelGameInstaller`, tải nhanh assets, libraries, client  
+- **Java tự động** – Phát hiện Java 8+, **tối thiểu Java 17** cho phiên bản mới  
+- **Tùy chỉnh RAM** – Sửa `-Xmx`, JVM args trong Settings
 
-📥 Hướng Dẫn Cài Đặt
-Yêu Cầu Hệ Thống
+### 3. **Cập Nhật Launcher**
+- **Kiểm tra tự động** – Dùng `appcast.xml` từ GitHub Releases  
+- **Dialog cập nhật** – Hiển thị **HTML notes** qua **WebView2**  
+- **Tải ZIP** – Progress bar (dung lượng, tốc độ KB/s), kiểm tra **tính toàn vẹn**  
+- **Cài đặt** – Chạy `VoxelUpdater.exe`, tự động khởi động lại  
+- **Pending Updates** – Bỏ qua → badge hiện, cài sau
 
-Hệ điều hành:
-Windows 10: Phiên bản tối thiểu 1803 (Build 17134) hoặc cao hơn (hỗ trợ tốt nhất từ 1903).
-Windows 11: Phiên bản tối thiểu 21H2 (Build 22000) hoặc cao hơn.
+### 4. **Giao Diện & Tùy Chỉnh**
+- **Sidebar** – Menu trượt: **Info, Mods, Servers, Partners**  
+- **Bottom Bar** – Nút **Play lớn**, Changelog, Settings  
+- **Custom Title Bar** – Hỗ trợ kéo thả, theme tối  
+- **Loading Screen** – Video animation + progress bar  
+- **Notification** – Badge + toast
 
-CPU: Intel Core i3 hoặc tương đương (khuyến nghị i5/i7 cho modpack lớn).
-RAM: Tối thiểu 4GB (khuyến nghị 8GB+ cho Minecraft).
-Lưu trữ: 2GB trống cho launcher + 4GB+ cho Minecraft.
-Đồ họa: Integrated Graphics (Intel HD 4000+) hoặc Discrete GPU (NVIDIA/AMD).
-Java: Tự động tải Java 17+ (tích hợp OpenJDK).
-.NET: Windows App SDK 1.4+ (tự động cài khi chạy installer).
+### 5. **Hỗ Trợ Mods & Servers**
+- **Mods** – Tab tải mod qua **CurseForge** (sắp có)  
+- **Servers** – Danh sách server, **ping tự động**  
+- **Changelog** – Hiển thị notes cập nhật qua WebView2
 
-Lưu ý: Launcher chỉ hỗ trợ Windows (không hỗ trợ macOS/Linux).
-Bước Cài Đặt
+---
 
-Tải Launcher:
-Truy cập GitHub Releases.
-Tải file VoxelLauncher.exe (self-contained, không cần cài đặt).
+## **Hướng Dẫn Cài Đặt**
 
-Chạy Launcher:
-Double-click VoxelLauncher.exe.
-Nếu thiếu .NET hoặc WebView2, Windows sẽ tự động cài (chấp nhận prompt).
+### **Yêu Cầu Hệ Thống**
+| Yêu cầu | Chi tiết |
+|--------|--------|
+| **Hệ điều hành** | Windows 10 (1803+) hoặc Windows 11 (21H2+) |
+| **CPU** | Intel Core i3+ (khuyến nghị i5/i7) |
+| **RAM** | Tối thiểu 4GB (khuyến nghị 8GB+) |
+| **Lưu trữ** | 2GB (launcher) + 4GB+ (Minecraft) |
+| **Đồ họa** | Intel HD 4000+ hoặc GPU rời |
+| **Java** | Tự động tải **OpenJDK 17+** |
+| **.NET** | Windows App SDK 1.4+ (tự cài) |
 
-Đăng Nhập:
-Chọn "Microsoft" cho tài khoản Premium (Xbox Live).
-Chọn "Offline" cho chơi không cần tài khoản.
+> **Chỉ hỗ trợ Windows** – Không hỗ trợ macOS/Linux
 
-Chọn Phiên Bản & Chơi:
-Chọn phiên bản Minecraft (ví dụ: 1.20.1).
-Bấm "Play" – launcher sẽ tải tự động nếu thiếu.
+---
 
-Cập Nhật:
-Launcher tự kiểm tra cập nhật khi khởi động.
-Nếu có bản mới, dialog sẽ hiện với notes chi tiết.
+### **Bước Cài Đặt**
 
+1. **Tải Launcher**  
+   → Truy cập: [GitHub Releases](https://github.com/ShadowZa982/VoxelLauncher/releases/latest)  
+   → Tải file: `VoxelLauncher.exe` (**self-contained**)
 
-Cài Đặt Thủ Công (nếu cần)
+2. **Chạy Launcher**  
+   → Double-click `VoxelLauncher.exe`  
+   → Nếu thiếu **WebView2/.NET**, Windows sẽ tự động cài
 
-Java: Tải từ Adoptium (Temurin 17+).
-Mods: Tải từ CurseForge, đặt vào .minecraft/mods.
-Thư mục Minecraft:%APPDATA%\.minecraft (mặc định).
+3. **Đăng Nhập**  
+   - **Microsoft** → Tài khoản Premium (Xbox Live)  
+   - **Offline** → Chơi không cần tài khoản
 
-Khắc Phục Lỗi Thường Gặp:
+4. **Chọn Phiên Bản & Chơi**  
+   → Chọn `1.20.1` (ví dụ) → Bấm **Play**  
+   → Launcher tự động tải nếu thiếu
 
-Lỗi WebView2: Cài Microsoft Edge WebView2 Runtime.
-Lỗi Java: Chạy java -version trong CMD để kiểm tra.
-Lỗi Cập Nhật: Kiểm tra firewall/antivirus chặn GitHub.
+5. **Cập Nhật**  
+   → Tự động kiểm tra khi khởi động  
+   → Nếu có bản mới → **dialog hiện ngay** với notes
 
+---
 
-⚙️ Hướng Dẫn Sử Dụng Nâng Cao
-Quản Lý Phiên Bản
+### **Cài Đặt Thủ Công (nếu cần)**
 
-Tải Snapshot: Chọn phiên bản "snapshot" trong danh sách.
-Tùy Chỉnh RAM: Sửa JVM args trong Settings (mặc định: -Xmx2G).
-Server Favorites: Thêm server vào tab "Servers" để ping tự động.
+| Mục | Hướng dẫn |
+|-----|-----------|
+| **Java** | Tải từ [Adoptium](https://adoptium.net/) (Temurin 17+) |
+| **Mods** | Tải từ CurseForge → đặt vào `.minecraft/mods` |
+| **Thư mục Minecraft** | `%APPDATA%\.minecraft` |
 
-Mods & Resource Packs
+---
 
-Mods: Sử dụng Fabric/Forge qua tab "Mods". Tải modpack từ CurseForge.
-Resource Packs: Đặt vào .minecraft/resourcepacks.
+### **Khắc Phục Lỗi Thường Gặp**
 
-Cập Nhật & Backup
+| Lỗi | Cách khắc phục |
+|-----|----------------|
+| **WebView2 lỗi** | Cài [WebView2 Runtime](https://developer.microsoft.com/en-us/microsoft-edge/webview2/) |
+| **Java lỗi** | Mở CMD → `java -version` |
+| **Cập nhật lỗi** | Kiểm tra firewall/antivirus chặn GitHub |
+| **Launcher treo** | Kill `VoxelLauncher.exe` trong Task Manager |
+| **Không tải game** | Kiểm tra internet, thử VPN nếu Mojang bị chặn |
+| **Lỗi đăng nhập** | Xóa `ms_accounts.json` trong `.minecraft` |
 
-Pending Updates: Nếu bỏ qua, badge sẽ hiện ở nút Notification.
-Backup: Sao lưu .minecraft trước khi mod.
+---
 
-Troubleshooting
+## **Hướng Dẫn Sử Dụng Nâng Cao**
 
-Launcher Treo: Kill process VoxelLauncher.exe trong Task Manager.
-Không Tải Game: Kiểm tra kết nối internet, thử VPN nếu Mojang bị chặn.
-Lỗi Đăng Nhập: Xóa ms_accounts.json trong .minecraft.
+### **Quản Lý Phiên Bản**
+- **Tải Snapshot** → Chọn trong danh sách  
+- **Tùy chỉnh RAM** → Sửa `-Xmx2G` trong Settings  
+- **Server Favorites** → Thêm vào tab Servers → ping tự động
 
+### **Mods & Resource Packs**
+- **Mods** → Dùng Fabric/Forge → tải từ CurseForge  
+- **Resource Packs** → Đặt vào `.minecraft/resourcepacks`
 
-🔗 Liên Kết Hữu Ích
+### **Cập Nhật & Backup**
+- **Pending Updates** → Badge ở nút Notification  
+- **Backup** → Sao lưu `.minecraft` trước khi mod
 
-GitHub Repo:github.com/ShadowZa982/VoxelLauncher
-Minecraft Wiki:minecraft.wiki
-CurseForge Mods:curseforge.com/minecraft/mc-mods
-Hỗ Trợ: Mở Issue trên GitHub hoặc Discord (sắp có).
+---
 
+## **Liên Kết Hữu Ích**
 
-📄 Giấy Phép & Góp Ý
+- **GitHub Repo:** [github.com/ShadowZa982/VoxelLauncher](https://github.com/ShadowZa982/VoxelLauncher)  
+- **Minecraft Wiki:** [minecraft.wiki](https://minecraft.wiki)  
+- **CurseForge Mods:** [curseforge.com/minecraft/mc-mods](https://www.curseforge.com/minecraft/mc-mods)  
+- **Hỗ Trợ:** Mở Issue trên GitHub hoặc Discord (sắp có)
 
-License: MIT License (xem LICENSE file).
-Góp Ý: Fork repo, submit PR hoặc mở Issue.
-Đóng Góp: Star repo, chia sẻ với bạn bè!
+---
 
-Cảm ơn bạn đã sử dụng VoxelLauncher!
-Phát triển bởi ShadowZa982 – Hẹn gặp lại ở phiên bản tiếp theo.
+## **Giấy Phép & Góp Ý**
+
+- **License:** [MIT License](LICENSE)  
+- **Góp Ý:** Fork repo → Submit PR hoặc mở Issue  
+- **Đóng Góp:** **Star repo**, chia sẻ với bạn bè!
+
+---
+
+> **Cảm ơn bạn đã sử dụng VoxelLauncher!**  
+> **Phát triển bởi ShadowZa982** – Hẹn gặp lại ở phiên bản tiếp theo!
+
+---
