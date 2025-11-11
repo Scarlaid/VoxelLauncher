@@ -7,8 +7,7 @@
 
 ---
 
-## **Phiên bản hiện tại:** `v1.0.0`  
-**Cập nhật:** 11/11/2025  
+## **Hệ thống:** 
 **Yêu cầu hệ thống:**  
 - **Windows 10** (version **1803 trở lên**)  
 - **Windows 11** (version **21H2 trở lên**)
@@ -23,12 +22,13 @@
 
 - **Giao diện hiện đại** – WinUI 3, theme tối, animation mượt mà, sidebar điều hướng nhanh  
 - **Hỗ trợ đa tài khoản** – Microsoft (Xbox Live) + Offline, lưu nhiều tài khoản, chuyển đổi nhanh  
-- **Tải phiên bản tự động** – Hỗ trợ **tất cả phiên bản** từ `1.7.10` → `1.21+` (bao gồm snapshot)  
+- **Tải phiên bản tự động** – Hỗ trợ **tất cả phiên bản** từ `0.1.0` → `Mói nhất` (bao gồm snapshot, release, rc, old version, Pre-Release)
+- **Tích họp loader `Fabric, Forger, Quilt, NeoFoger, Vanilla`
 - **Tích hợp Java** – Tự động phát hiện, hỗ trợ **Java 8+**, tải **Java 17+** nếu thiếu  
 - **Cập nhật tự động** – Kiểm tra GitHub Releases, tải ZIP + progress bar chi tiết  
 - **Thông báo thông minh** – Toast khi đăng nhập, badge cho cập nhật bị bỏ qua  
-- **Tùy chỉnh mạnh mẽ** – Sidebar (Mods, Servers, Changelog), WebView2 hiển thị nội dung web  
-- **Bảo mật cao** – Lưu session an toàn, hỗ trợ **XboxAuthNet + MSAL**
+- **Tùy chỉnh mạnh mẽ** – Sidebar (Mods, Servers, Changelog)
+- **Bảo mật cao** – Lưu session an toàn, hỗ trợ **XboxAuth**
 
 > **Không cần tài khoản Premium để chơi Offline**  
 > **Cần Premium để chơi online với server chính thức**
@@ -46,29 +46,27 @@
 
 ### 2. **Tải & Chạy Minecraft**
 - **Danh sách phiên bản** – Tải từ Mojang, hiển thị **release + snapshot**  
-- **Tải song song** – Dùng `ParallelGameInstaller`, tải nhanh assets, libraries, client  
+- **Tải song song** – Dùng `GameInstaller`, tải nhanh assets, libraries, client  
 - **Java tự động** – Phát hiện Java 8+, **tối thiểu Java 17** cho phiên bản mới  
 - **Tùy chỉnh RAM** – Sửa `-Xmx`, JVM args trong Settings
 
 ### 3. **Cập Nhật Launcher**
-- **Kiểm tra tự động** – Dùng `appcast.xml` từ GitHub Releases  
-- **Dialog cập nhật** – Hiển thị **HTML notes** qua **WebView2**  
-- **Tải ZIP** – Progress bar (dung lượng, tốc độ KB/s), kiểm tra **tính toàn vẹn**  
+- **Kiểm tra tự động**
+- **Dialog cập nhật** – Hiển thị **chi tiết**  
+- **Tải Cập nhật** – Progress bar (dung lượng, tốc độ KB/s), kiểm tra **tính toàn vẹn**  
 - **Cài đặt** – Chạy `VoxelUpdater.exe`, tự động khởi động lại  
 - **Pending Updates** – Bỏ qua → badge hiện, cài sau
 
 ### 4. **Giao Diện & Tùy Chỉnh**
 - **Sidebar** – Menu trượt: **Info, Mods, Servers, Partners**  
 - **Bottom Bar** – Nút **Play lớn**, Changelog, Settings  
-- **Custom Title Bar** – Hỗ trợ kéo thả, theme tối  
 - **Loading Screen** – Video animation + progress bar  
 - **Notification** – Badge + toast
 
 ### 5. **Hỗ Trợ Mods & Servers**
-- **Mods** – Tab tải mod qua **CurseForge** (sắp có)  
+- **Mods** – Tab tải mod qua **[modthrim](http://modrinth.com/)** có sẵn và **CurseForge** (sắp có)  
 - **Servers** – Danh sách server, **ping tự động**  
-- **Changelog** – Hiển thị notes cập nhật qua WebView2
-
+- **Changelog** – Hiển thị notes cập nhật phiên bản minecraft 
 ---
 
 ## **Hướng Dẫn Cài Đặt**
@@ -117,7 +115,7 @@
 | Mục | Hướng dẫn |
 |-----|-----------|
 | **Java** | Tải từ [Adoptium](https://adoptium.net/) (Temurin 17+) |
-| **Mods** | Tải từ CurseForge → đặt vào `.minecraft/mods` |
+| **Mods** | Tải từ CurseForge hoặc Fabric, các loader khác → đặt vào `.minecraft/mods` |
 | **Thư mục Minecraft** | `%APPDATA%\.minecraft` |
 
 ---
@@ -143,7 +141,7 @@
 - **Server Favorites** → Thêm vào tab Servers → ping tự động
 
 ### **Mods & Resource Packs**
-- **Mods** → Dùng Fabric/Forge → tải từ CurseForge  
+- **Mods** → Dùng Fabric/Forge → tải từ CurseForge hoặc Modrinth
 - **Resource Packs** → Đặt vào `.minecraft/resourcepacks`
 
 ### **Cập Nhật & Backup**
@@ -156,8 +154,9 @@
 
 - **GitHub Repo:** [github.com/ShadowZa982/VoxelLauncher](https://github.com/ShadowZa982/VoxelLauncher)  
 - **Minecraft Wiki:** [minecraft.wiki](https://minecraft.wiki)  
-- **CurseForge Mods:** [curseforge.com/minecraft/mc-mods](https://www.curseforge.com/minecraft/mc-mods)  
-- **Hỗ Trợ:** Mở Issue trên GitHub hoặc Discord (sắp có)
+- **CurseForge Mods:** [curseforge.com/minecraft/mc-mods](https://www.curseforge.com/minecraft/mc-mods)
+- **Modrinth Mods:** [modrinth.com/mods](https://modrinth.com/mods)
+- **Hỗ Trợ:** Mở Issue trên GitHub hoặc Discord [FoxStudio](https://discord.gg/ThEFtBxpRf)
 
 ---
 
@@ -170,6 +169,6 @@
 ---
 
 > **Cảm ơn bạn đã sử dụng VoxelLauncher!**  
-> **Phát triển bởi ShadowZa982** – Hẹn gặp lại ở phiên bản tiếp theo!
+> **Phát triển bởi ShadowZa982-FoxStudio** – Hẹn gặp lại ở phiên bản tiếp theo!
 
 ---
