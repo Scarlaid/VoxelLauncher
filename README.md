@@ -1,4 +1,4 @@
-#VoxelLauncher - Hướng Dẫn Sử Dụng & README
+VoxelLauncher - Hướng Dẫn Sử Dụng & README
 VoxelLauncher là launcher Minecraft tùy chỉnh được xây dựng bằng WinUI 3 và Windows App SDK, sử dụng thư viện CmlLib.Core để hỗ trợ đầy đủ các tính năng Minecraft Java Edition. Launcher được phát triển bởi ShadowZa982 (GitHub: ShadowZa982/VoxelLauncher).
 Launcher tập trung vào giao diện đẹp, dễ sử dụng, hỗ trợ đăng nhập Microsoft/Offline, tải phiên bản Minecraft tự động, và cập nhật launcher qua GitHub Releases.
 Phiên bản hiện tại: v1.0.0 (cập nhật ngày 11/11/2025)
