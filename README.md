@@ -5,7 +5,7 @@
 
 **VoxelLauncher** là **launcher Minecraft Java Edition** được xây dựng bằng **WinUI 3** và **Windows App SDK**, sử dụng thư viện **[CmlLib.Core](https://github.com/CmlLib/CmlLib.Core)** để hỗ trợ đầy đủ các tính năng Minecraft chính thức.
 
-> **Phát triển bởi:** [ShadowZa982](https://github.com/ShadowZa982)  
+> **Phát triển bởi:** [FoxStudio]([https://github.com/ShadowZa982](https://discord.gg/ThEFtBxpRf))  
 > **GitHub:** [ShadowZa982/VoxelLauncher](https://github.com/ShadowZa982/VoxelLauncher)
 
 ---
