@@ -1,5 +1,8 @@
 # VoxelLauncher
 
+<img width="258" height="258" alt="serve_logor" src="https://github.com/user-attachments/assets/a8eaa9e6-644d-4165-a763-f745ee12cbed" />
+
+
 **VoxelLauncher** là **launcher Minecraft Java Edition** được xây dựng bằng **WinUI 3** và **Windows App SDK**, sử dụng thư viện **[CmlLib.Core](https://github.com/CmlLib/CmlLib.Core)** để hỗ trợ đầy đủ các tính năng Minecraft chính thức.
 
 > **Phát triển bởi:** [ShadowZa982](https://github.com/ShadowZa982)  
@@ -33,6 +36,9 @@
 > **Không cần tài khoản Premium để chơi Offline**  
 > **Cần Premium để chơi online với server chính thức**
 
+<img width="1177" height="697" alt="{412C7C5B-620A-4B11-9655-CBAC18A1D416}" src="https://github.com/user-attachments/assets/6198b18c-3968-4814-914e-6afeccf32254" />
+
+
 ---
 
 ## **Chức Năng Chính**
@@ -43,6 +49,12 @@
 - **Quản lý tài khoản** – Lưu nhiều tài khoản, xem avatar, thời gian đăng nhập, loại tài khoản  
 - **Xóa tài khoản** – Dễ dàng xóa vĩnh viễn  
 - **Thông báo** – Toast + avatar khi đăng nhập thành công
+
+  <img width="1182" height="701" alt="{B67E377A-B22A-4CB5-96C5-0AB5C4ADFB5A}" src="https://github.com/user-attachments/assets/844ae444-427e-4236-8c7b-c558a811a4ae" />
+
+  <img width="1170" height="699" alt="{74E90BB9-E778-4AA6-800D-CB5146C411A8}" src="https://github.com/user-attachments/assets/2c7f8515-3e00-40d7-afbf-929862b1d75d" />
+
+
 
 ### 2. **Tải & Chạy Minecraft**
 - **Danh sách phiên bản** – Tải từ Mojang, hiển thị **release + snapshot**  
@@ -66,7 +78,10 @@
 ### 5. **Hỗ Trợ Mods & Servers**
 - **Mods** – Tab tải mod qua **[modthrim](http://modrinth.com/)** có sẵn và **CurseForge** (sắp có)  
 - **Servers** – Danh sách server, **ping tự động**  
-- **Changelog** – Hiển thị notes cập nhật phiên bản minecraft 
+- **Changelog** – Hiển thị notes cập nhật phiên bản minecraft
+
+  <img width="1175" height="696" alt="{6623C5BC-011E-458A-8F9B-3C2B6EB27A43}" src="https://github.com/user-attachments/assets/53968097-6482-47b1-ad1a-767fae940de1" />
+
 ---
 
 ## **Hướng Dẫn Cài Đặt**
