@@ -62,6 +62,11 @@
 - **Java tự động** – Phát hiện Java 8+, **tối thiểu Java 17** cho phiên bản mới  
 - **Tùy chỉnh RAM** – Sửa `-Xmx`, JVM args trong Settings
 
+  <img width="1174" height="700" alt="{50926480-4EA9-4416-AE9A-4BD674210943}" src="https://github.com/user-attachments/assets/6021e6d7-75af-46bd-8d0f-15064800a135" />
+
+<img width="1172" height="690" alt="{905F850A-2E99-4B23-948D-40741E541F95}" src="https://github.com/user-attachments/assets/1a4b6487-0e1c-4b73-ac41-b7f935ea456a" />
+
+
 ### 3. **Cập Nhật Launcher**
 - **Kiểm tra tự động**
 - **Dialog cập nhật** – Hiển thị **chi tiết**  
