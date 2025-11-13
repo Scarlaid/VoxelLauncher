@@ -182,6 +182,7 @@
 - **License:** [MIT License](LICENSE)  
 - **Góp Ý:** Fork repo → Submit PR hoặc mở báo lỗi.  
 - **Đóng Góp:** **Star repo**, chia sẻ với bạn bè!
+- Mã nguồn đóng vì code đều dựa theo ChatGPT và các Language Model tương tự.
 
 ---
 
