@@ -19,7 +19,7 @@
 
 ## **Mô Tả Tổng Quan**
 
-**VoxelLauncher** là **launcher miễn phí, mã nguồn mở**, giúp bạn chơi **Minecraft Java Edition** **một cách dễ dàng** mà **không cần tải thủ công** file từ Mojang.
+**VoxelLauncher** là **launcher miễn phí**, giúp bạn chơi **Minecraft Java Edition** **một cách dễ dàng** mà **không cần tải thủ công** file từ Mojang.
 
 ### **Đặc điểm nổi bật**
 
