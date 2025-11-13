@@ -3,7 +3,7 @@
 <img width="258" height="258" alt="serve_logor" src="https://github.com/user-attachments/assets/a8eaa9e6-644d-4165-a763-f745ee12cbed" />
 
 
-**VoxelLauncher** là **launcher Minecraft Java Edition** được xây dựng bởi người việt, hỗ trợ đầy đủ các tính năng Minecraft chính thức.
+**VoxelLauncher** là một **Minecraft: Java Edition** Launcher được xây dựng bởi người Việt và nó hoàn toàn 100% Ai-generated! 
 
 > **Phát triển bởi:** [FoxStudio](https://discord.gg/ThEFtBxpRf)
 > **GitHub:** [ShadowZa982/VoxelLauncher](https://github.com/ShadowZa982/VoxelLauncher)
@@ -19,18 +19,18 @@
 
 ## **Mô Tả Tổng Quan**
 
-**VoxelLauncher** là **launcher miễn phí**, giúp bạn chơi **Minecraft Java Edition** **một cách dễ dàng** mà **không cần tải thủ công** file từ Mojang.
+**VoxelLauncher** là **launcher lậu**, giúp bạn chơi **Minecraft: Java Edition** một cách **dễ dàng** hoàn toàn kéo tử Mojang API với nhiều lo âu về độ an toàn bảo mật.
 
 ### **Đặc điểm nổi bật**
 
-- **Giao diện hiện đại** – WinUI 3, theme tối, animation mượt mà, sidebar điều hướng nhanh  
-- **Hỗ trợ đa tài khoản** – Microsoft (Xbox Live) + Offline, lưu nhiều tài khoản, chuyển đổi nhanh  
-- **Tải phiên bản tự động** – Hỗ trợ **tất cả phiên bản** từ `0.1.0` → `Mói nhất` (bao gồm snapshot, release, rc, old version, Pre-Release)
+- **Giao diện hiện đại** – WinUI 3 🤮, theme tối, animation mượt mà, sidebar điều hướng nhanh  
+- **Hỗ trợ đa tài khoản** – Microsoft Account + Offline, như [Prism Launcher](https://prismlauncher.org/), lưu nhiều tài khoản, chuyển đổi nhanh  
+- **Tải phiên bản tự động** – Hỗ trợ **tất cả phiên bản** từ `0.1.0` → `Mói nhất` (bao gồm snapshot, release, rc, old version, Pre-Release) theo Mojang API
 - **Tích họp loader `Fabric, Forger, Quilt, NeoFoger, Vanilla`
-- **Tích hợp Java** – Tự động phát hiện, hỗ trợ **Java 8+**, tải **Java 17+** nếu thiếu  
-- **Cập nhật tự động** – Kiểm tra GitHub Releases, tải ZIP + progress bar chi tiết  
-- **Thông báo thông minh** – Toast khi đăng nhập, badge cho cập nhật bị bỏ qua  
-- **Tùy chỉnh mạnh mẽ** – Sidebar (Mods, Servers, Changelog)
+- **Tích hợp Java** – Tự động phát hiện, hỗ trợ **Java 8+** cho phiên bản cũ, tải **Java 17+** nếu từ chính server của bọn mình như TLauncher 
+- **Cập nhật tự động** – Kiểm tra phiên bản mới nhất theo GitHub Release, tự tải và giải nén chi tiết  
+- **Thông báo thông minh** – Thông báo dạng **Toast** khi đăng nhập và nhận dạng cho cập nhật bị bỏ qua nếu không thể kéo từ GitHub về   
+- **Tùy chỉnh mạnh mẽ** – Thanh điều hướng bao gồm quản lí modpack, phiên bản theo từng "nhánh" và nhiều thứ khác!
 - **Bảo mật cao** – Lưu session an toàn, hỗ trợ **XboxAuth**
 
 > **Không cần tài khoản Premium để chơi Offline**  
@@ -81,9 +81,9 @@
 - **Notification** – Badge + toast
 
 ### 5. **Hỗ Trợ Mods & Servers**
-- **Mods** – Tab tải mod qua **[modthrim](http://modrinth.com/)** có sẵn và **CurseForge** (sắp có)  
-- **Servers** – Danh sách server, **ping tự động**  
-- **Changelog** – Hiển thị notes cập nhật phiên bản minecraft
+- **Mods** – Tab tải mod qua mọi nền tảng nổi tiếng
+- **Servers** – Danh sách server, có server ghim tài trợ bởi mình
+- **Changelog** – Hiển thị thông tin cập nhật phiên bản Minecraft
 
   <img width="1175" height="696" alt="{6623C5BC-011E-458A-8F9B-3C2B6EB27A43}" src="https://github.com/user-attachments/assets/53968097-6482-47b1-ad1a-767fae940de1" />
 
@@ -95,12 +95,12 @@
 | Yêu cầu | Chi tiết |
 |--------|--------|
 | **Hệ điều hành** | Windows 10 (1803+) hoặc Windows 11 (21H2+) |
-| **CPU** | Intel Core i3+ (khuyến nghị i5/i7) |
-| **RAM** | Tối thiểu 4GB (khuyến nghị 8GB+) |
-| **Lưu trữ** | 2GB (launcher) + 4GB+ (Minecraft) |
-| **Đồ họa** | Intel HD 4000+ hoặc GPU rời |
-| **Java** | Tự động tải **OpenJDK 17+** |
-| **.NET** | Windows App SDK 1.4+ (tự cài) |
+| **CPU** | Intel Core i3 gen 10 trở lên (khuyến nghị i5/i7) |
+| **RAM** | Tối thiểu 8GB (khuyến nghị 16GB+) |
+| **Lưu trữ** | 4GB-8GB Allocated RAM |
+| **Đồ họa** | Intel UHD (khuyến nghị GT730+) |
+| **Java** | Java 17+ trở đi |
+| **.NET** | Windows App SDK 1.4+ |
 
 > **Chỉ hỗ trợ Windows** – Không hỗ trợ macOS/Linux
 
@@ -109,12 +109,12 @@
 ### **Bước Cài Đặt**
 
 1. **Tải Launcher**  
-   → Truy cập: [GitHub Releases](https://github.com/ShadowZa982/VoxelLauncher/releases/latest)  
-   → Tải file: `VoxelLauncher.exe` (**self-contained**)
+   → Truy cập: [GitHub Releases]([https://github.com/ShadowZa982/VoxelLauncher/releases/latest](https://prismlauncher.org/))  
+   → Tải file: `PrismLauncher.exe` (**self-contained**)
 
 2. **Chạy Launcher**  
-   → Double-click `VoxelLauncher.exe`  
-   → Nếu thiếu **WebView2/.NET**, Windows sẽ tự động cài
+   → Double-click `PrismLauncher.exe`  
+   → Không cần **WebView2/.NET**, Windows sẽ không tự động cài
 
 3. **Đăng Nhập**  
    - **Microsoft** → Tài khoản Premium (Xbox Live)  
@@ -134,8 +134,8 @@
 
 | Mục | Hướng dẫn |
 |-----|-----------|
-| **Java** | Tải từ [Adoptium](https://adoptium.net/) (Temurin 17+) |
-| **Mods** | Tải từ CurseForge hoặc Fabric, các loader khác → đặt vào `.minecraft/mods` |
+| **Java** | Tải từ [Azul]([https://adoptium.net/](https://www.azul.com/downloads/)) (Zulu 8+) |
+| **Mods** | Tải từ CurseForge hoặc Fabric, các loader khác → đặt vào `.minecraft/mods` vì mình không thể làm hệ thống quản lí mod |
 | **Thư mục Minecraft** | `%APPDATA%\.minecraft` |
 
 ---
@@ -145,11 +145,11 @@
 | Lỗi | Cách khắc phục |
 |-----|----------------|
 | **WebView2 lỗi** | Cài [WebView2 Runtime](https://developer.microsoft.com/en-us/microsoft-edge/webview2/) |
-| **Java lỗi** | Mở CMD → `java -version` |
-| **Cập nhật lỗi** | Kiểm tra firewall/antivirus chặn GitHub |
-| **Launcher treo** | Kill `VoxelLauncher.exe` trong Task Manager |
-| **Không tải game** | Kiểm tra internet, thử VPN nếu Mojang bị chặn |
-| **Lỗi đăng nhập** | Xóa `ms_accounts.json` trong `.minecraft` |
+| **Java lỗi** | Tải Zulu JDK thay vì dùng Java mặc định |
+| **Cập nhật lỗi** | Xoá VoxelLauncher và dùng Prism Launcher |
+| **Launcher treo** | Xoá VoxelLauncher và dùng Prism Launcher |
+| **Không tải game** | Dùng Prism Launcher |
+| **Lỗi đăng nhập** | Xoá VoxelLauncher và dùng Prism Launcher |
 
 ---
 
@@ -173,9 +173,6 @@
 ## **Liên Kết Hữu Ích**
 
 - **GitHub Repo:** [github.com/ShadowZa982/VoxelLauncher](https://github.com/ShadowZa982/VoxelLauncher)  
-- **Minecraft Wiki:** [minecraft.wiki](https://minecraft.wiki)  
-- **CurseForge Mods:** [curseforge.com/minecraft/mc-mods](https://www.curseforge.com/minecraft/mc-mods)
-- **Modrinth Mods:** [modrinth.com/mods](https://modrinth.com/mods)
 - **Hỗ Trợ:** Mở Issue trên GitHub hoặc Discord [FoxStudio](https://discord.gg/ThEFtBxpRf)
 
 ---
@@ -183,7 +180,7 @@
 ## **Giấy Phép & Góp Ý**
 
 - **License:** [MIT License](LICENSE)  
-- **Góp Ý:** Fork repo → Submit PR hoặc mở Issue  
+- **Góp Ý:** Fork repo → Submit PR hoặc mở báo lỗi.  
 - **Đóng Góp:** **Star repo**, chia sẻ với bạn bè!
 
 ---
